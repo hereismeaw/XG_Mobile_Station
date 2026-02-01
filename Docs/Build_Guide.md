@@ -71,9 +71,9 @@ The dock was designed from the beginning to be assembled at JLCPCB because of th
 ## Parts Guide
 
 ### Ordering Parts
-Some parts may not be currently available in JLCPCB. This will be indicated with a red "xxx shortfall" text under the select column or they may appear on the bottom under unmatched parts. For each unavailable, part you need to manually order the part before you can order the assembled boards. It will typically take a few days to two weeks for the parts to arrive at JLCPCB.
+Some parts may not be currently available in JLCPCB. This will be indicated with a red "xxx shortfall" text under the select column or they may appear on the bottom under unmatched parts. If there is an [alternative part](#alternative-part-numbers), you can change the part number to the substitute JLC part (read the notes). Otherwise, for each unavailable, part you need to manually order the part before you can order the assembled boards. It will typically take a few days to two weeks for the parts to arrive at JLCPCB.
 
-1. Locate the part number. If this is a shortfall part, click the row and then select "Part Info". Copy the "MFR.Part #". Also note the number required in the "Qty" column. This is the minimum number you need to buy. It may not always be possible to buy the exact number, so you may end up with extra parts. If this is an expensive part and you are cost conscious, consider buying some number of PCBs to get the number of missing parts to be an exact amount you can buy for all the missing parts. This will increase your total cost but decrease your per-unit cost.
+1. Locate the part number. If this is a shortfall part, click the row and then select "Part Info". Copy the "MFR.Part #". Also note the number required in the "Qty" column. This is the minimum number you need to buy. It may not always be possible to buy the exact number, so you may end up with extra parts. If this is an expensive part and you are cost conscious, consider buying some number of PCBs to get the number of missing parts to be an exact amount you can buy for all the missing parts. This will increase your total cost but decrease your per-unit cost. Read the [alternative part](#alternative-part-numbers) section below for cost conscious substitutes.
 2. Order the Order Parts page: https://jlcpcb.com/user-center/smtPrivateLibrary/orderParts
 3. You have a choice between JLCPCB Parts or Global Sourcing Parts. JLCPCB Parts is recommended for cost and ease but not all parts will be available.
 4. First, try to search in JLCPCB Parts: paste the part number and search. If there are multiple results, click the one with the exact match on the part number. You will either see a box to type in the quantity or "Unavailable".
@@ -82,7 +82,14 @@ Some parts may not be currently available in JLCPCB. This will be indicated with
 7. You will be presented with a list of distributors. Some of these will be mismatches, check the number in bold above each table of distributors. This must be an exact match with your part number. Note the "Distributor Part #" may not match but that is okay. Each distributor has a minimum order quantity and a unit price breakdown. The easiest way to find the cheapest distributor is to enter your desired Qty from step 1 into each text box and look at the "Ext. Price" which is automatically calculated. Once you select a distributor, add the component to your cart. You can now repeat these steps for other missing parts.
 8. Once you have all the missing parts added, visit the [Parts Cart](https://jlcpcb.com/user-center/smtPrivateLibrary/orderParts) and checkout your "JLCPCB Parts" and/or your "Global Sourcing Parts".
 
-### Cost Reduction
+### Alternative Part Numbers
+
+| Designator | Build | Part          | Part (JLC) | Substitute          | Substitute (JLC) | Notes                                                             |
+|------------|-------|---------------|------------|---------------------|------------------|-------------------------------------------------------------------|
+| J2,J3      | Both  | 20455-040E-76 | C5160883   | ALC04-S40EIA-00     | C2842536         | Use only when original is out of stock. Substitute QC is unknown. |
+| J13        | Lite  | 39300240      | C492361    | ZX-5557-4.2-2-12PWZ | C7541574         | Substitute is always recommended. Cheaper and higher stock.       |
+
+### Cost Reduction (Standard)
 If you are ordering a low quantity (2-5 units) of PCBA boards and don't mind doing a bit of manual soldering with a heat gun or reflow oven, here's some tips you can follow.
 
 * Choose Economic PCBA with Top Side for the lowest cost
